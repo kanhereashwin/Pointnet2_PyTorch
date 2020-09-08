@@ -7,7 +7,8 @@ import numpy as np
 import torch
 import torch.utils.data as data
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+# BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+BASE_DIR = os.path.abspath('scratch/users/akanhere/Pointnet2_PyTorch/pointnet2/data')
 
 
 def _get_data_files(list_filename):
@@ -23,7 +24,7 @@ def _load_data_file(name):
 
 
 class Indoor3DSemSeg(data.Dataset):
-    def __init__(self, num_points, train=True, download=True, data_precent=1.0):
+    def __init__(self, num_points, train=True, download=False, data_precent=1.0):
         super().__init__()
         self.data_precent = data_precent
         self.folder = "indoor3d_sem_seg_hdf5_data"

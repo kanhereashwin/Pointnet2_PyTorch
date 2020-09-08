@@ -11,7 +11,8 @@ import torch
 import torch.utils.data as data
 import tqdm
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+# BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+BASE_DIR = os.path.abspath('scratch/users/akanhere/Pointnet2_PyTorch/pointnet2/data')
 
 
 def pc_normalize(pc):
@@ -24,7 +25,7 @@ def pc_normalize(pc):
 
 
 class ModelNet40Cls(data.Dataset):
-    def __init__(self, num_points, transforms=None, train=True, download=True):
+    def __init__(self, num_points, transforms=None, train=True, download=False):
         super().__init__()
 
         self.transforms = transforms
