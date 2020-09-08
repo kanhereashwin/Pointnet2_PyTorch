@@ -17,6 +17,9 @@ pointnet2.egg-info/
 .mypy_cache
 **/*.pyc
 
+.vscode
+pointnet2/.vscode
+
 
 pointnet2/data/modelnet40_normal_resampled/
 pointnet2/data/modelnet40_normal_resampled_cache/
