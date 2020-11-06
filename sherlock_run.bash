@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --time=24:00:00
-#SBATCH --job-name=pretrain-pointnet2
+#SBATCH --time=20:00:00
+#SBATCH --job-name=pretrain-pointnet2_noxyz
 #SBATCH --cpus-per-task=2
 #SBATCH --mem=4G
 #SBATCH -p gpu
