@@ -68,7 +68,7 @@ class PointNet2ClassificationSSG(pl.LightningModule):
                 radius=0.2,
                 nsample=64,
                 # mlp=[3, 64, 64, 128],
-                mlp=[0, 64, 64, 128]
+                mlp=[0, 64, 64, 128],
                 use_xyz=self.hparams["model.use_xyz"],
             )
         )
